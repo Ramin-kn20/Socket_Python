@@ -10,7 +10,7 @@ port = input(Fore.YELLOW + "Connection Port >>> ")
 connection.connect((ip, int(port)))
 
 # print(Fore.CYAN + "Connected !")
-Notification(title='Connected !', description='Now you are connected successfully to server', duration=5, urgency='normal').send()
+Notification(title='Connected !', description='Now you connect successfully to server', duration=5, urgency='normal').send()
 
 while True:
     message = connection.recv(1024)
